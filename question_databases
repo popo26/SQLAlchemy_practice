@@ -1,0 +1,40 @@
+
+Questions: Databases
+
+
+
+
+- What is SQLAlchemy? What is it used for?
+
+	--> It is a tool to use SQL data via Python.
+
+
+- Can SQLAlchemy connect to MySQL and PostgreSQL servers?
+
+	--> Yes.
+
+- Once we connect to the database server, can we make multiple queries?
+
+	-->Yes.
+
+
+- After you execute the query, what do you need to do to work with the data returned from the DB?
+
+	--> save it as a variable, then connection.execute(query) to fetch the data and start using as you like.
+
+
+- How would you prepare the following query using SQLAlchemy:
+
+	SELECT * FROM sakila.film WHERE title = "AFRICAN EGG";
+	
+	--> query = sqlalchemy.select([film]).where(film.columns.title = "AFRICAN EGG")
+	
+	
+- Can you create tables using SQLAlchemy?
+
+	--> Yes.
+
+
+- Can you insert more than one record at a time using SQLAlchemy?
+
+	--> Yes.
